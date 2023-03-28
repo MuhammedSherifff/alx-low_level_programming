@@ -3,25 +3,20 @@
 /**
  * main - entry point
  *
- * Description: print all alphabet letters except q and e
+ * Description: print all single digit numbers
  *
  * Return: Always 0 (Success)
 */
 
 int main(void)
 {
-	char ch = 'a';
+	int i;
 
-	while (ch <= 'z')
+	for (i = 0; i < 10; i++)
 	{
-		if (ch == 'q' || ch == 'e')
-		{
-			ch++;
-		}
-		putchar(ch);
-		ch++;
+		printf("%i", i);
 	}
-	putchar('\n');
+	printf("\n");
 
 	return (0);
 }
